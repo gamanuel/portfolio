@@ -1,0 +1,23 @@
+.perfil {
+    width: 30%;
+}
+
+
+
+.altoBackground {
+    height: 100vh;
+}
+
+.margen6 {
+    margin-top: 10% ;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300 !important;
+    letter-spacing: 2px;
+}
+
+.latoB {
+    font-weight: 700 !important  ;
+}
