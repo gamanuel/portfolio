@@ -2,13 +2,29 @@
     width: 30%;
 }
 
+.fondoGris {
+    background-color: rgba(128, 128, 128, 0.781);
+    border: none;
+}
 
+.fondoGris[type=text]:focus{
+    color: white;
+    background-color: rgba(151, 148, 148, 0.781);
+}
+
+.fondoGris::placeholder {
+    color: rgba(255, 255, 255, 0.719);
+}
 
 .altoBackground {
     height: 100vh;
 }
 
-.margen6 {
+.margen1 {
+    margin-top: 10% ;
+}
+
+.margen5 {
     margin-top: 10% ;
 }
 
@@ -21,3 +37,4 @@
 .latoB {
     font-weight: 700 !important  ;
 }
+

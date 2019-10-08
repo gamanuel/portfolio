@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="container col-md-5">
-        <div class="row text-center margen6">
+        <div class="row text-center margen1">
             <div class="mx-auto col-md-12">
                 <img src="./images/perfil.png" class="rounded-circle mx-auto perfil" alt="Avatar">
             </div>
@@ -41,7 +41,25 @@
                 </ul>
             </div>
         </nav>
+        <div class="row margen5 p-5">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control fondoGris" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control fondoGris" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control fondoGris" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
+
+
 
 {include file="footer.tpl"}
