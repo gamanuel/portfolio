@@ -22,7 +22,7 @@
     </div>
     <div class="col-md-7 bg-dark lato altoBackground ">
         <nav class="navbar navbar-expand-lg navbar-dark  ">
-            <a class="navbar-brand scrollN unscrolledLink text-white" href="/">Manuel Garcia Amaro</a>
+            <a class="navbar-brand scrollN unscrolledLink text-white" href="/"> < Manuel Garcia Amaro /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                         <a class="nav-link text-white mr-4" href="#">Software</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white " href="#">Contacto</a>
+                        <a class="nav-link text-white subr" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -53,7 +53,7 @@
                     <div class="form-group">
                         <textarea class="form-control fondoGris" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="col-md-12 btn botonBack"> Enviar </button>
                 </form>
             </div>
         </div>
