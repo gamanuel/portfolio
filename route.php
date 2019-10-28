@@ -1,13 +1,11 @@
   <?php
-
-//  require_once 'Controller/EjemploController.php';
-    require_once 'view/LoginView.php';
-    require_once 'view/InicioView.php';
-
+  require_once 'controller/webController.php';
+ 
   define('ACTION',0);
   define('VALOR1',1);
   define('VALOR2',2);
   define('VALOR3',3);
+
 
   if(!isset($_GET['action']))
   $_GET['action'] = '';
@@ -16,13 +14,13 @@
   $partesUrl = explode('/', $action);
 
   switch ($partesUrl[ACTION]) {
-    case 'inicio':
-      $controller = new InicioView();
-      $controller->ShowHome();
+    case 'home':
+      $controller = new webController();
+      $controller->getHome();
     break;
     default:
-      $controller = new InicioView();
-      $controller->ShowHome();
+      $controller = new webController();
+      $controller->getHome();
       break;
   } 
 ?>

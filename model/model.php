@@ -1,5 +1,5 @@
 <?php
-include_once "model/modelDatos.php";
+include_once "Model/modelDatos.php";
 define('HOST',$db_host);
 define('BASE',$db_base);
 define('USER',$db_user);
@@ -10,6 +10,8 @@ class Model {
   protected $conectarBaseDeDatos;
 
   public function __construct(){
+    
+    
     
     try {
       $this->conectarBaseDeDatos = new PDO('mysql:host='.HOST.';dbname='.BASE.';charset=utf8',USER,PASS); 
