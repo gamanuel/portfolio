@@ -64,43 +64,36 @@
           </div>
           <div class="col-lg-2 col"></div>
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
-          	<form action="#" class="request-form ftco-animate">
+          	<form action="#" autocomplete="off" class="request-form ftco-animate">
           		<h2>Buscá tu vehiculo</h2>
-				<div class="form-group">
-					<label for="" class="label">Filtro</label>
-					<input type="text" class="form-control" placeholder="Marca o Modelo">
-				</div>
-				<div class="d-flex">
-					<div class="form-group mr-2">
-						<label for="" class="label">Marca</label>
-						<input type="text" class="form-control"  placeholder="Marca">
-
-					</div>
-					<div class="form-group ml-2">
-						<label for="" class="label">Modelo</label>
-						<input type="text" class="form-control"  placeholder="Modelo">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="" class="label">Service</label>
-					<select class="form-control" id="exampleFormControlSelect1">
-							<option>Seleccione Service</option>
-							<option>Aceite + 1 filtro $2000</option>
-							<option>Aceite + 4 filtros $8000</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="" class="label">Centro de Servicio</label>
-					<select class="form-control" id="exampleFormControlSelect1">
-						<option>Seleccione Taller</option>
-						<option>Service Bosch Independencia</option>
-						<option>Lubricentro Santiago</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Buscar Turno" class="btn btn-primary py-3 px-4">
-				</div>
-	    	</form>
+              <div class="d-flex">
+                <div class="form-group mr-2 autocomplete">
+                  <label for="" class="label">Marca</label>
+                  <input type="text" class="form-control" id="inputMarcas" placeholder="Marca">
+                </div>
+                <div class="form-group ml-4">
+                  <label for="" class="label">Modelo</label>
+                  <input type="text" class="form-control"  id="inputModelos" placeholder="Modelo">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="label">Service</label>
+                <select class="form-control" id="exampleFormControlSelect1" disabled>
+                    <option>Seleccione Service</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="" class="label">Centro de Servicio</label>
+                <select class="form-control" id="exampleFormControlSelect1" disabled>
+                  <option>Seleccione Taller</option>
+                  <option>Service Bosch Independencia</option>
+                  <option>Lubricentro Santiago</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Buscar Turno" class="btn btn-primary py-3 px-4">
+              </div>
+	    	    </form>
           </div>
         </div>
       </div>
@@ -394,6 +387,7 @@
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/check-mdq.js"></script>
     
   </body>
 </html>

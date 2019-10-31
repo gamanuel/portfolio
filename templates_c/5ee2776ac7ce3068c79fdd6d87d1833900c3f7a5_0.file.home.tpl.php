@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-10-28 22:33:40
+/* Smarty version 3.1.32, created on 2019-10-31 16:30:34
   from '/Users/manuel/www/check-mdq/templates/home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5db75eb467ae50_34252182',
+  'unifunc' => 'content_5dbafe1a60ea27_24739468',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5ee2776ac7ce3068c79fdd6d87d1833900c3f7a5' => 
     array (
       0 => '/Users/manuel/www/check-mdq/templates/home.tpl',
-      1 => 1572298417,
+      1 => 1572535789,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db75eb467ae50_34252182 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dbafe1a60ea27_24739468 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
   <head>
@@ -87,43 +87,36 @@ function content_5db75eb467ae50_34252182 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="col-lg-2 col"></div>
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
-          	<form action="#" class="request-form ftco-animate">
+          	<form action="#" autocomplete="off" class="request-form ftco-animate">
           		<h2>Buscá tu vehiculo</h2>
-				<div class="form-group">
-					<label for="" class="label">Filtro</label>
-					<input type="text" class="form-control" placeholder="Marca o Modelo">
-				</div>
-				<div class="d-flex">
-					<div class="form-group mr-2">
-						<label for="" class="label">Marca</label>
-						<input type="text" class="form-control"  placeholder="Marca">
-
-					</div>
-					<div class="form-group ml-2">
-						<label for="" class="label">Modelo</label>
-						<input type="text" class="form-control"  placeholder="Modelo">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="" class="label">Service</label>
-					<select class="form-control" id="exampleFormControlSelect1">
-							<option>Seleccione Service</option>
-							<option>Aceite + 1 filtro $2000</option>
-							<option>Aceite + 4 filtros $8000</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="" class="label">Centro de Servicio</label>
-					<select class="form-control" id="exampleFormControlSelect1">
-						<option>Seleccione Taller</option>
-						<option>Service Bosch Independencia</option>
-						<option>Lubricentro Santiago</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Buscar Turno" class="btn btn-primary py-3 px-4">
-				</div>
-	    	</form>
+              <div class="d-flex">
+                <div class="form-group mr-2 autocomplete">
+                  <label for="" class="label">Marca</label>
+                  <input type="text" class="form-control" id="inputMarcas" placeholder="Marca">
+                </div>
+                <div class="form-group ml-4">
+                  <label for="" class="label">Modelo</label>
+                  <input type="text" class="form-control"  id="inputModelos" placeholder="Modelo">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="label">Service</label>
+                <select class="form-control" id="exampleFormControlSelect1" disabled>
+                    <option>Seleccione Service</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="" class="label">Centro de Servicio</label>
+                <select class="form-control" id="exampleFormControlSelect1" disabled>
+                  <option>Seleccione Taller</option>
+                  <option>Service Bosch Independencia</option>
+                  <option>Lubricentro Santiago</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Buscar Turno" class="btn btn-primary py-3 px-4">
+              </div>
+	    	    </form>
           </div>
         </div>
       </div>
@@ -448,6 +441,9 @@ function content_5db75eb467ae50_34252182 (Smarty_Internal_Template $_smarty_tpl)
 >
   <?php echo '<script'; ?>
  src="js/main.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="js/check-mdq.js"><?php echo '</script'; ?>
 >
     
   </body>

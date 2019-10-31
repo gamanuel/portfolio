@@ -18,6 +18,14 @@
       $controller = new webController();
       $controller->getHome();
     break;
+    case 'get-marcas':
+      $controller = new webController();
+      $controller->getMarcas();
+    break; 
+    case 'get-modelos':
+      $controller = new webController();
+      $controller->getModelos($partesUrl[VALOR1]);
+      break; 
     default:
       $controller = new webController();
       $controller->getHome();
