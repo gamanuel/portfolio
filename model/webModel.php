@@ -15,15 +15,15 @@ class webModel extends Model {
     }
 
     public function getVehiculos($filtro){
-        $marcas = $this->conectarBaseDeDatos->prepare("SELECT idmarca FROM marca WHERE Descripcion LIKE '$filtro%'");
+        /* $marcas = $this->conectarBaseDeDatos->prepare("SELECT idmarca FROM marca WHERE Descripcion LIKE '$filtro%'");
         $marcas->execute();
         $marca = $marcas->fetchAll(PDO::FETCH_ASSOC);
         $vehiculos = "";
         foreach ($marca as $marc) {
             $vehiculos .= "Codigo_marca = ".$marc['idmarca']." OR ";
         }
-        $vehiculo =  substr($vehiculos,0,-3);
-        $sentencia = $this->conectarBaseDeDatos->prepare("SELECT Descripcion FROM vehiculo WHERE $vehiculo");
+        $vehiculo =  substr($vehiculos,0,-3); */
+        $sentencia = $this->conectarBaseDeDatos->prepare("SELECT Descripcion FROM vehiculo WHERE Codigo_marca IN (SELECT idmarca FROM marca WHERE Descripcion LIKE '$filtro%') ORDER BY Descripcion");
         $sentencia->execute();
         return $sentencia->fetchAll(PDO::FETCH_ASSOC);
     }

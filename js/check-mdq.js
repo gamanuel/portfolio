@@ -21,6 +21,9 @@ window.onload = function() {
                 autocomplete(inputModelos, mod);
             });
         }
+        else {
+            autocomplete(inputModelos,"");
+        }
     });
 
 
