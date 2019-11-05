@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-10-31 16:30:34
+/* Smarty version 3.1.32, created on 2019-11-05 15:14:03
   from '/Users/manuel/www/check-mdq/templates/home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5dbafe1a60ea27_24739468',
+  'unifunc' => 'content_5dc183abbbf174_45582467',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5ee2776ac7ce3068c79fdd6d87d1833900c3f7a5' => 
     array (
       0 => '/Users/manuel/www/check-mdq/templates/home.tpl',
-      1 => 1572535789,
+      1 => 1572963241,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbafe1a60ea27_24739468 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dc183abbbf174_45582467 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
   <head>
@@ -102,19 +102,19 @@ function content_5dbafe1a60ea27_24739468 (Smarty_Internal_Template $_smarty_tpl)
               <div class="form-group">
                 <label for="" class="label">Service</label>
                 <select class="form-control" id="exampleFormControlSelect1" disabled>
-                    <option>Seleccione Service</option>
+                    <option>Taller Michellin Independencia 369</option>
                 </select>
               </div>
               <div class="form-group">
                 <label for="" class="label">Centro de Servicio</label>
                 <select class="form-control" id="exampleFormControlSelect1" disabled>
-                  <option>Seleccione Taller</option>
+                  <option>Taller Michellin Independencia 369</option>
                   <option>Service Bosch Independencia</option>
                   <option>Lubricentro Santiago</option>
                 </select>
               </div>
               <div class="form-group">
-                <input type="submit" value="Buscar Turno" class="btn btn-primary py-3 px-4">
+                <input type="button" value="Buscar Turno" class="btn btn-primary py-3 px-4"  data-toggle="modal" data-target="#exampleModalCenter">
               </div>
 	    	    </form>
           </div>
@@ -265,7 +265,7 @@ function content_5dbafe1a60ea27_24739468 (Smarty_Internal_Template $_smarty_tpl)
             <div class="media block-6 services services-2">
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
-                <h3>Seleccione Marca y Modelo</h3>
+                <h3>Taller Michellin Independencia 369 y Modelo</h3>
                 <p>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto </p>
               </div>
             </div>      
@@ -274,7 +274,7 @@ function content_5dbafe1a60ea27_24739468 (Smarty_Internal_Template $_smarty_tpl)
             <div class="media block-6 services services-2">
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-select"></span></div>
-                <h3>Seleccione Service</h3>
+                <h3>Taller Michellin Independencia 369</h3>
                 <p>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto </p>
               </div>
             </div>      
@@ -395,6 +395,27 @@ function content_5dbafe1a60ea27_24739468 (Smarty_Internal_Template $_smarty_tpl)
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Taller Michellin Independencia 369</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Pagar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <?php echo '<script'; ?>
